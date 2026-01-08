@@ -1,0 +1,184 @@
+Absolutely, Tom — here’s a clean, complete walkthrough for setting up **VS Code to run Jupyter notebooks**, written the way I’d explain it to a colleague who wants everything to “just work” the first time.
+
+I’ll show each step, why it matters, and how to verify it’s working.
+
+---
+
+# 🧩 1. Install VS Code (if not already installed)
+
+Download from the official site:
+
+**https://code.visualstudio.com**
+
+Install using all default options — especially:
+
+- **Add to PATH**
+- **Register as default editor for supported file types**
+
+These make your life easier later.
+
+---
+
+# 🧩 2. Install the Required VS Code Extensions
+
+Open VS Code → left sidebar → **Extensions** (square icon)
+
+Search for and install:
+
+### **1. Python (Microsoft)**
+- Provides Python language support  
+- Required for Jupyter notebooks to run
+
+### **2. Jupyter (Microsoft)**
+- Adds notebook support  
+- Lets you run `.ipynb` files directly in VS Code  
+- Provides cell execution, variable explorer, plots, etc.
+
+### **3. (Optional) Jupyter Keymap + Jupyter Notebook Renderers**
+These improve keyboard shortcuts and rendering.
+
+Once installed, VS Code will prompt you to reload — do it.
+
+---
+
+# 🧩 3. Make Sure You Have Python Installed
+
+Since you use Anaconda, you’re already set.
+
+But VS Code needs to know **which Python interpreter** to use.
+
+Open the Command Palette:
+
+```
+Ctrl + Shift + P
+```
+
+Type:
+
+```
+Python: Select Interpreter
+```
+
+Choose your Anaconda environment, usually something like:
+
+```
+(base) C:\ProgramData\anaconda3\python.exe
+```
+
+or whichever environment you want to run notebooks in.
+
+---
+
+# 🧩 4. Open Your GitHub Notebook
+
+You can either:
+
+### **A. Clone your GitHub repo**
+Open a terminal:
+
+```
+git clone https://github.com/yourusername/yourrepo.git
+cd yourrepo
+code .
+```
+
+or
+
+### **B. Open the folder directly in VS Code**
+File → Open Folder → select your repo folder.
+
+Then open the `.ipynb` file.
+
+VS Code will automatically detect it as a notebook.
+
+---
+
+# 🧩 5. Select the Jupyter Kernel
+
+At the top right of the notebook, you’ll see:
+
+```
+Select Kernel
+```
+
+Click it and choose the same Python interpreter you selected earlier.
+
+This ensures:
+
+- imports work  
+- conda packages load correctly  
+- the notebook runs in the right environment  
+
+---
+
+# 🧩 6. Run a Cell
+
+Click the **Run** button (triangle icon) next to any cell.
+
+Or use:
+
+```
+Shift + Enter
+```
+
+If everything is set up correctly, you’ll see:
+
+- execution count `[1]`  
+- output below the cell  
+- variables appearing in the **Variable Explorer** (top right)
+
+This confirms your Jupyter environment is working.
+
+---
+
+# 🧩 7. Install Missing Packages (if needed)
+
+If a cell errors with “module not found,” install packages into your environment:
+
+```
+conda install numpy pandas matplotlib
+```
+
+or
+
+```
+pip install numpy pandas matplotlib
+```
+
+VS Code will automatically pick them up.
+
+---
+
+# 🧩 8. Optional: Enable Interactive Window
+
+If you prefer a MATLAB‑style workflow:
+
+- Open a `.py` file  
+- Add `# %%` to create a cell  
+- Run it with **Run Cell**
+
+VS Code opens a Jupyter‑style interactive window.
+
+---
+
+# 🎉 At this point, you’re fully set up
+
+You can now:
+
+- Run GitHub notebooks locally  
+- Edit and save `.ipynb` files  
+- Use plots, variable explorer, and debugging  
+- Switch kernels and environments  
+- Mix Python scripts and notebooks seamlessly  
+
+---
+
+If you want, Tom, I can also help you:
+
+- Set up a dedicated conda environment for Jupyter  
+- Fix kernel issues (very common)  
+- Sync notebooks between GitHub and VS Code  
+- Convert `.ipynb` ↔ `.py`  
+- Use VS Code’s remote development features  
+
+Just tell me what direction you want to go.
