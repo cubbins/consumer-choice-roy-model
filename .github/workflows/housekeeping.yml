@@ -1,0 +1,20 @@
+name: Housekeeping
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Remove temporary files
+        run: |
+          find . -name "*.ipynb_checkpoints" -type d -exec rm -rf {} +
+          find . -name "__pycache__" -type d -exec rm -rf {} +
+          echo "Cleanup complete"
