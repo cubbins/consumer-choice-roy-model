@@ -155,6 +155,32 @@ Switched to a new branch 'peisen_lecture'
 https://github.com/eisenhauerIO/projects-student-template
 
 
+=====================
+here is my github repo:'https://github.com/cubbins/consumer-choice-roy-model' using Visual Studio Code, I want to create a branch that I can submit work to, but keep the main branch independent, how do I do that, with terminal active in Visual Studio Code
+
+
+
+git checkout main
+git pull
+git checkout -b analysis-work
+git push -u origin analysis-work
+git push
+
+git checkout main
+git checkout analysis-work
+
+
+Task	Command
+Create + switch to branch	
+git checkout -b my-branch
+Commit work	
+git add .  
+git commit -m "msg"
+Push branch	
+git push -u origin my-branch
+Switch branches	
+git checkout main / 
+git checkout my-branch
 
 
 
