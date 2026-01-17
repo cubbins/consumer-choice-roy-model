@@ -1,0 +1,165 @@
+…or create a new repository on the command line
+echo "# github_jupyter_notebook" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/cubbins/github_jupyter_notebook.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/cubbins/github_jupyter_notebook.git
+git branch -M main
+git push -u origin main
+
+
+Let's study the technical information and computation in this github repo, and abstract the python code, and any data present and save it to a separate stand along file, for analysis, do your abstraction of code and data, as best as can be represented.
+
+Please save to a *.py file, because the purpose of this exercise is to check the computation of the material outside of a Jupyter file, can you analysis and abstract the technical information and purpose found in the code and data to a separate file for analysis, its type will be *.py
+
+User: Let's study the technical information and computation in this github repo, and abstract the python code, and any data present and save it to a separate stand along file, for analysis, do your abstraction of code and data, as best as can be represented.
+
+GitHub Copilot: I'll analyze your project by examining the code and data, then create an abstracted summary document. Let me start by exploring the key files. 
+
+Read [](file:///c%3A/Users/cubbi/Desktop/___1_15_2026/projects-student-template/README.md)
+
+Read [](file:///c%3A/Users/cubbi/Desktop/___1_15_2026/projects-student-template/pyproject.toml)
+
+Read [](file:///c%3A/Users/cubbi/Desktop/___1_15_2026/projects-student-template/environment.yml)
+
+Read [](file:///c%3A/Users/cubbi/Desktop/___1_15_2026/projects-student-template/auxiliary/plots.py#1-1), lines 1 to 100
+
+Read [](file:///c%3A/Users/cubbi/Desktop/___1_15_2026/projects-student-template/auxiliary/predictions.py#1-1), lines 1 to 100
+
+Read [](file:///c%3A/Users/cubbi/Desktop/___1_15_2026/projects-student-template/auxiliary/tables.py#1-1), lines 1 to 100
+
+Now let me check the notebook to understand the overall analysis flow: 
+
+Read [](file:///c%3A/Users/cubbi/Desktop/___1_15_2026/projects-student-template/project.ipynb#1-1), lines 1 to 200
+
+Let me read more of the notebook and also check the data files: 
+
+Ran terminal command: dir /s data\
+
+User: What file, a *.py file, did you perform the abstraction to, and where was the abstraction all code and data, which can found and addressed saved
+
+GitHub Copilot: I haven't created the abstraction file yet. I was gathering information from your project files when the context ended, but I didn't complete the task of creating the standalone abstraction document.
+
+Would you like me to proceed with creating a comprehensive abstraction document that includes:
+
+1. **Code abstraction** - Summary of all Python modules and their functions
+2. **Data abstraction** - Overview of the datasets (structure, variables, formats)
+3. **Technical summary** - The computational methods and analysis approach
+4. **Overall architecture** - How the components connect
+
+I can save this to a new `.py` file or as a `.md` (markdown) document. Which would you prefer, and what filename would you like?
+
+User: Please save to a *.py file, because the purpose of this exercise is to check the computation of the material outside of a Jupyter file, can  you analysis and abstract the technical information and purpose found in the code and data to a separate file for analysis, its type will be *.py
+
+GitHub Copilot: I'll create a comprehensive Python abstraction file. Let me first read the complete auxiliary modules to capture all the technical details: 
+
+Read [](file:///c%3A/Users/cubbi/Desktop/___1_15_2026/projects-student-template/auxiliary/plots.py)
+
+Read [](file:///c%3A/Users/cubbi/Desktop/___1_15_2026/projects-student-template/auxiliary/predictions.py)
+
+Read [](file:///c%3A/Users/cubbi/Desktop/___1_15_2026/projects-student-template/auxiliary/tables.py)
+
+Now I'll create a comprehensive abstraction file: 
+
+Created [](file:///c%3A/Users/cubbi/Desktop/___1_15_2026/projects-student-template/PROJECT_ABSTRACTION.py)
+
+Perfect! I've created a comprehensive abstraction file saved as **PROJECT_ABSTRACTION.py** in your project directory.
+
+This file contains:
+
+1. **Project Overview** - Purpose and research questions
+2. **Theoretical Framework** - Performance standard model with mathematical formulation
+3. **Identification Strategy** - RDD methodology and assumptions
+4. **Data Structure** - Complete variable definitions and transformations
+5. **Computational Methods** - Analysis workflow and pipeline
+6. **Statistical Methods** - Regression specifications and estimation details
+7. **Code Module Structure** - Complete breakdown of 30+ functions across 3 modules
+8. **Analysis Workflow** - Full notebook structure and logic flow
+9. **Key Computations** - Parameter estimates and heterogeneous effects
+10. **Data Issues & Solutions** - Missing data handling and bounds analysis
+11. **Software Environment** - Dependencies and versions
+12. **Publication References** - Original papers and citations
+13. **Project Statistics** - Metrics on code size and data
+14. **Summary of Technical Computation** - Step-by-step computation flow (15 steps)
+15. **Expected Findings** - Theoretical predictions vs empirical results
+
+The file is a **standalone `.py` file** that can be run directly outside Jupyter to view the entire abstraction in your terminal or IDE.
+
+Made changes.
+
+================================
+Integrate and data and data handling routines found in the should be portable file 'data_utilities', found in the 'files' subdirectory in this local github program, into the code of this github project, try and perform good integration of the existing code with the newly found data and data processing as presented in data_utilities.py
+
+Let's take this entire code base in 'courses-business-decisions', and extract out the database level with its storage and functions of retrieve, and save it, functional, in a separate file, on the disk, which is correct and runs properly
+
+Make a Python file *.py, that is completely portable from information and logic in test_database.py so that this new file *.py can be imported into a new github type project, just complete this task, as best as can be according the understanding of the data and the data retrieve function found in the test_database.py just produced
+
+================================
+
+from online_retail_simulator.simulate.characteristics_rule_based import simulate_characteristics_rule_based
+
+Code(inspect.getsource(simulate_characteristics_rule_based), language="python")
+
+
+
+job_info=simulate("config_simulation.yaml")
+dict_ = load_job_results(job_info)
+#dict_keys(['products','metrics'])
+Dict_.keys()
+
+STORAGE:  PATH: output RULE:  CHARACTERISTICS:  FUNCTION: simulate_characteristics_rule_based  PARAMS:  num_products: 100  seed: 42  METRICS:  FUNCTION: simulate_metrics_rule_based  PARAMS:  date_start: "2024-11-01"  date_end: "2024-11-30"  sale_prob: 0.7  seed: 42 PRODUCT_DETAILS:  FUNCTION: simulate_product_details_mock
+dict_keys(['products', 'metrics'])
+
+
+
+
+
+
+
+
+metrics-load_job_result(job_info)['metrics']
+products.iloc[0]
+metrics.sort_values(['product_idetifier', 'date']).head()
+#How revenue distributed across product catagories
+category_revenue=metrics.groupby("category")['revenue'].sum()
+#method call by catagory
+#exploring data,
+plot_revenue_by_category(category_revenue)
+#support file for plotting
+
+
+
+==========================
+
+git branch -al
+
+(base) C:\Users\cubbi\OneDrive\Desktop\1_13_2026\courses-business-decisions>git reset --hard
+
+(base) C:\Users\cubbi\OneDrive\Desktop\1_13_2026\courses-business-decisions>git reset --hard=====
+HEAD is now at 336b245 steamline index
+
+(base) C:\Users\cubbi\OneDrive\Desktop\1_13_2026\courses-business-decisions>git checkout peisen-lecture
+error: pathspec 'peisen-lecture' did not match any file(s) known to git
+
+(base) C:\Users\cubbi\OneDrive\Desktop\1_13_2026\courses-business-decisions>git checkout peisen_lecture
+branch 'peisen_lecture' set up to track 'origin/peisen_lecture'.
+
+
+Switched to a new branch 'peisen_lecture'
+
+==========================
+https://github.com/eisenhauerIO/projects-student-template
+
+
+
+
+
+
+
+
+
+
