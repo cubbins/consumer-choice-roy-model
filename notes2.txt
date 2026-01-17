@@ -163,6 +163,10 @@ here is my github repo:'https://github.com/cubbins/consumer-choice-roy-model' us
 git checkout main
 git pull
 git checkout -b analysis-work
+
+git add .
+git commit -m "msg"
+
 git push -u origin analysis-work
 git push
 
